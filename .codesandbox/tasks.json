@@ -1,0 +1,78 @@
+{
+  // These tasks will run in order when initializing your CodeSandbox project.
+  "setupTasks": [
+    {
+      "command": "npm install",
+      "name": "Install Dependencies"
+    }
+  ],
+
+  // These tasks can be run from CodeSandbox. Running one will open a log in the app.
+  "tasks": {
+    "start": {
+      "name": "start",
+      "command": "npm run start",
+      "runAtStart": true
+    },
+    "build": {
+      "name": "build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "preview": {
+      "name": "preview",
+      "command": "npm run preview",
+      "runAtStart": false
+    },
+    "lint": {
+      "name": "lint",
+      "command": "npm run lint",
+      "runAtStart": false
+    },
+    "lint:spaces": {
+      "name": "lint:spaces",
+      "command": "npm run lint:spaces",
+      "runAtStart": false
+    },
+    "lint:markup": {
+      "name": "lint:markup",
+      "command": "npm run lint:markup",
+      "runAtStart": false
+    },
+    "lint:html": {
+      "name": "lint:html",
+      "command": "npm run lint:html",
+      "runAtStart": false
+    },
+    "lint:bem": {
+      "name": "lint:bem",
+      "command": "npm run lint:bem",
+      "runAtStart": false
+    },
+    "lint:styles": {
+      "name": "lint:styles",
+      "command": "npm run lint:styles",
+      "runAtStart": false
+    },
+    "lint:scripts": {
+      "name": "lint:scripts",
+      "command": "npm run lint:scripts",
+      "runAtStart": false
+    },
+    "optimize": {
+      "name": "optimize",
+      "command": "npm run optimize",
+      "runAtStart": false
+    },
+    "optimize:raster": {
+      "name": "optimize:raster",
+      "command": "npm run optimize:raster",
+      "runAtStart": false
+    },
+    "optimize:vector": {
+      "name": "optimize:vector",
+      "command": "npm run optimize:vector",
+      "runAtStart": false
+    }
+  }
+}

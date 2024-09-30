@@ -2,6 +2,15 @@
 @import "./common/variables.scss";
 @import "./common/global.scss";
 @import "./common/fonts.scss";
+@import "./common/mixins.scss";
 
-/* BLOCKS */
-@import "./blocks/header.scss";
+// COMMON
+@import "common/variables";
+
+@import "common/global";
+@import "common/fonts";
+
+// BLOCKS
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/footer";
