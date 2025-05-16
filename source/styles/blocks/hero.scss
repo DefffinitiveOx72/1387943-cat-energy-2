@@ -1,0 +1,27 @@
+.hero{
+background-color: $main-color;
+font-family:$main-font;
+color:#FFFFFF;
+@include flex(column, center, center);
+
+
+@media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+    margin: 0 auto;
+    background-color: $main-color; 
+    color:$font-color;
+}
+}
+
+.hero__title{
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+}
+ 
+.hero_subtitle{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
