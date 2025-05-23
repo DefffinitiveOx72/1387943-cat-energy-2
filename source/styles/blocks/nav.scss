@@ -1,0 +1,45 @@
+.nav {
+  font-family: $main-font;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color:$font-color;
+
+  @media (min-width: $tablet-width) {
+    width: 60%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 39%;
+  }
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center);
+  }
+}
+
+.nav__item {
+  text-align: center;
+  margin: 0;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+  }
+}
+
+.nav__item::after {
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+}
+
+.nav__link {
+  text-decoration: none;
+}

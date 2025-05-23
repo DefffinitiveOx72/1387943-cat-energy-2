@@ -1,0 +1,57 @@
+.footer {
+  background-color: $basic-light-gray;
+}
+
+.footer__container {
+  @include flex(column, space-between, center);
+
+  width: $mobile-container-width;
+  margin: 0 auto;
+  padding: 40px 0;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+
+    width: $tablet-container-width;
+    padding: 55px 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+    padding: 66px 0;
+  }
+}
+
+
+.footer__social {
+  @include flex();
+  gap: 24px;
+
+  @media (min-width: $tablet-width) {
+    width: 132px;
+  }
+}
+
+.footer__developer {
+  @include flex(row, space-between, center);
+  width: 100%;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}
+
+.developer__link {
+  display: block;
+  background-color: $basic-dark-gray;
+  cursor: pointer;
+  mask-image: url("../../icons/stack.svg#html-academy-text-logo");
+  width: 113px;
+  height: 20px;
+}
+
+.developer__image {
+  
+  width: 27px;
+  height: 34px;
+}

@@ -1,0 +1,42 @@
+.main{
+  margin: 0 auto;
+  margin-top: 13px;
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    width: $tablet-container-width;
+    margin-top: 25px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+    margin-top: 55px;
+  }
+}
+
+.main__container{
+  @include flex(row, space-between, center);
+  flex-wrap: wrap;
+  width: $mobile-container-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 25%;
+    justify-content: flex-start;
+    margin: 0;
+  }
+
+}
+
+.logo{
+  width: 101px;
+  height: 18px;
+  margin-left: 88px;
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
+

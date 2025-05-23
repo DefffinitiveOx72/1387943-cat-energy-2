@@ -1,0 +1,55 @@
+.extra {
+  width: $mobile-container-width;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-container-width;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+    display: grid;
+    grid-template-columns: 1fr 20%;
+    column-gap: 80px;
+  }
+}
+
+.extra__title {
+  font-family: $main-font;
+  font-size: 24px;
+  line-height: 24px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 3;
+  }
+}
+
+.extra__products {
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / 2;
+  }
+}
+
+.extra-products__promo {
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 2 / 6;
+  }
+}
+
+
+.promo__text {
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  background-color:$main-color;
+}
+
+.promo__text::before {
+  content: "";
+  display: block;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../icons/stack.svg#gift-icon");
+}
+

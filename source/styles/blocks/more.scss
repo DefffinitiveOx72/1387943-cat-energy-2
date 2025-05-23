@@ -1,0 +1,17 @@
+.more {
+  @include flex(column, flex-end, center);
+}
+
+.more__title {
+  font-family:$main-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: #111111;
+  text-transform: uppercase;
+}
+
+.more__text {
+  font-size: 12px;
+  line-height: 16px;
+}
+
