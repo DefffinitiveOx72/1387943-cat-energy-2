@@ -1,0 +1,87 @@
+.main{
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, space-between, center);
+    flex-wrap: wrap;
+    width: $tablet-container-width;
+    margin: 24px auto;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-container-width;
+    margin-top: 54px;
+    margin-bottom: 29px;
+  }
+}
+
+.main__container{
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+  place-items: center center;
+  width: $mobile-container-width;
+  margin: 13px auto 11px;
+
+  @media (min-width: $tablet-width) {
+    @include flex(row, flex-start, center);
+    flex-wrap: wrap;
+    width: 25%;
+    margin: 0;
+  }
+}
+
+
+.logo__text-link {
+  grid-column: 3 / 4;
+  display: block;
+  width: 101px;
+  height: 21px;
+  background-color: #111111;
+  mask-image: url("../../icons/stack.svg#cat-energy-text-logo");
+  cursor: pointer;
+
+  @media (max-width: $mobile-width-max) {
+    margin-left: -35px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 120px;
+    height: 24px;
+  }
+
+}
+ 
+.nav__button{
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  top: 30px;
+  right: 21px;
+  background-color: #000000;
+  border: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    right: 0;
+    top: 6px;
+    z-index: 2;
+    background-color:#000000;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
