@@ -1,0 +1,93 @@
+.nav {
+  font-family: $font-color;
+  font-size: 18px;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000000;
+  position:relative;
+
+  @media (min-width: $desktop-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  background-color: $secondary-color;
+  z-index: 10;
+
+  @media (max-width: $mobile-width-max) {
+    display: none;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+
+  &--open {
+   display:block;
+   position:absolute;
+  } 
+
+&--nojs{
+ display: block;
+ position:static; 
+}
+}
+
+.nav__item {
+  text-align: center;
+  margin: 0;
+  padding: 22px 30px;
+  border-top: 1px solid #e6e6e6;
+
+  @media (min-width: $tablet-width) {
+    border: none;
+    padding: 0;
+  }
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+
+.nav__button{
+  width: 24px;
+  height: 2px;
+  top: 30px;
+  right: 21px;
+  background-color: #000000;
+  border: none;
+
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    right: 0;
+    top: 6px;
+    z-index: 2;
+    background-color:#000000;
+  }
+
+  &::after {
+    top: 8px;
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

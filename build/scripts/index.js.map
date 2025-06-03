@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": ["source/scripts/index.js"],
+  "sourcesContent": ["/* \u0432 \u044D\u0442\u043E\u0442 \u0444\u0430\u0439\u043B \u0434\u043E\u0431\u0430\u0432\u043B\u044F\u0435\u0442 \u0441\u043A\u0440\u0438\u043F\u0442\u044B*/\nconst navMain = document.querySelector('.nav');\nconst openButton = document.querySelector('.nav__button');\n\nopenButton.addEventListener('click', () => {\n  navMain.classList.toggle('nav__list--open');\n}\n)\n\nnavMain.classList.remove('nav__list--nojs');"],
+  "mappings": ";AACA,IAAM,UAAU,SAAS,cAAc,MAAM;AAC7C,IAAM,aAAa,SAAS,cAAc,cAAc;AAExD,WAAW;AAAA,EAAiB;AAAA,EAAS,MAAM;AACzC,YAAQ,UAAU,OAAO,iBAAiB;AAAA,EAC5C;AACA;AAEA,QAAQ,UAAU,OAAO,iBAAiB;",
+  "names": []
+}
