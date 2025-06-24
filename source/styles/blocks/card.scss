@@ -121,7 +121,7 @@
   background-color: #68b738;
   border: none;
   padding: 10px 53px;
-  font-family: Oswald, Arial, sans-serif;
+  font-family: $font-color;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
@@ -131,15 +131,24 @@
 
   @media (max-width: $mobile-width-max) {
     grid-column: 1 / 3;
-    padding:10px 110px;
+    padding: 10px 110px;
   }
 
   @media (min-width: $tablet-width) {
     padding: 11px 94px;
   }
 
-  @media (min-width: $desktop-width){
-    padding:11px 54px;
-    
+  @media (min-width: $desktop-width) {
+    padding: 11px 54px;
   }
+}
+
+.card__button:hover,
+.card__button:focus {
+  background-color: #5eaa2f;
+}
+
+.card__button:active {
+  color: rgba($secondary-color, 0.3);
+  background-color: #5eaa2f;
 }

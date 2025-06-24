@@ -115,21 +115,26 @@
   border: 2px solid #444444;
 }
 
-.subscribe__input:active {
+.subscribe__input:user-invalid {
   border: 2px solid #ff8282;
 }
 
 .subscribe__button {
   @include button;
-  padding: 17px 82px;
-  font-size: 20px;  
+  padding: 17px;
+  font-size: 20px;
 
   @media (min-width: $tablet-width) {
     width: 256px;
     height: 56px;
+    padding: 17px;
   }
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding: 17px 82px;
   }
 }

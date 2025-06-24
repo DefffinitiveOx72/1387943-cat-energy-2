@@ -196,6 +196,10 @@
   text-decoration: none;
   text-transform: uppercase;
 
+  &:hover::after {
+    transform: scaleX(1.2) translateX(4px);
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -211,9 +215,9 @@
   position: absolute;
   top: 2px;
   margin-left: 15px;
-
   width: 35px;
   height: 12px;
+  transition: all 0.3s ease;
 
   mask-image: url("../../icons/stack.svg#arrow-icon");
   background-color: #000000;
