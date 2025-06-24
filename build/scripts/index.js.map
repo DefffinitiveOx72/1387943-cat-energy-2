@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": ["source/scripts/index.js"],
-  "sourcesContent": ["const navMain = document.querySelector('.main-header__nav');\nconst openButton = document.querySelector('.main-header__toggle');\n\nnavMain.classList.remove('main-header__nav--nojs');\n\nopenButton.onclick = function() {\n  navMain.classList.toggle('main-header__nav--opened');\n};\n"],
-  "mappings": ";AAAA,IAAM,UAAU,SAAS,cAAc,mBAAmB;AAC1D,IAAM,aAAa,SAAS,cAAc,sBAAsB;AAEhE,QAAQ,UAAU,OAAO,wBAAwB;AAEjD,WAAW,UAAU,WAAW;AAC9B,UAAQ,UAAU,OAAO,0BAA0B;AACrD;",
-  "names": []
-}
